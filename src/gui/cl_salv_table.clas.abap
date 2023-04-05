@@ -33,7 +33,7 @@ CLASS cl_salv_table DEFINITION PUBLIC.
     METHODS get_event
       RETURNING VALUE(val) TYPE REF TO cl_salv_events_table.
     METHODS get_display_settings
-      RETURNING VALUE(val) TYPE REF TO cl_salv_table.
+      RETURNING VALUE(val) TYPE REF TO cl_salv_display_settings.
     METHODS set_striped_pattern IMPORTING val TYPE any.
     METHODS set_list_header IMPORTING val TYPE any.
     METHODS set_top_of_list IMPORTING val TYPE any.
