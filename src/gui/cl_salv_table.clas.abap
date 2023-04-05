@@ -14,7 +14,7 @@ CLASS cl_salv_table DEFINITION PUBLIC.
     METHODS set_selected_rows IMPORTING val TYPE any.
     METHODS set_selection_mode IMPORTING val TYPE i.
     METHODS get_selected_rows RETURNING VALUE(rows) TYPE ty_rows.
-    METHODS get_layout RETURNING VALUE(value) TYPE REF TO data.
+    METHODS get_layout RETURNING VALUE(value) TYPE REF TO object.
     METHODS close_screen.
     METHODS refresh.
     METHODS display.
