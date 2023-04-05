@@ -119,13 +119,6 @@ CLASS cl_salv_layout IMPLEMENTATION.
   ENDMETHOD.
 
 
-  METHOD get_layouts.
-
-    ASSERT 1 = 'todo'.
-
-  ENDMETHOD.
-
-
   METHOD get_save_restriction.
 
     ASSERT 1 = 'todo'.
