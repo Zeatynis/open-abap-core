@@ -20,8 +20,6 @@ CLASS cl_salv_table DEFINITION PUBLIC.
     METHODS display.
     METHODS is_offline RETURNING VALUE(value) TYPE abap_bool.
     METHODS get_metadata.
-    METHODS set_save_restriction IMPORTING value TYPE i DEFAULT 3.
-    METHODS set_key IMPORTING value TYPE data.
     METHODS set_screen_status
       IMPORTING
         pfstatus      TYPE any
