@@ -60,7 +60,7 @@ CLASS cl_salv_column_list DEFINITION
     INTERFACE if_salv_c_cell_type LOAD .
     METHODS set_cell_type
       IMPORTING
-        !value TYPE c.
+        !value TYPE i DEFAULT 0.
     METHODS set_color
       IMPORTING
         !value TYPE ty_color .
@@ -73,22 +73,22 @@ CLASS cl_salv_column_list DEFINITION
     INTERFACE if_salv_c_bool_sap LOAD .
     METHODS set_f4
       IMPORTING
-        !value TYPE c .
+        !value TYPE c DEFAULT abap_true.
     METHODS set_f4_checktable
       IMPORTING
         !value TYPE tabname .
     METHODS set_icon
       IMPORTING
-        !value TYPE c .
+        !value TYPE c DEFAULT abap_true .
     METHODS set_key
       IMPORTING
-        !value TYPE c .
+        !value TYPE c DEFAULT abap_true.
     METHODS set_key_presence_required
       IMPORTING
-        !value TYPE c .
+        !value TYPE c DEFAULT abap_true .
     METHODS set_symbol
       IMPORTING
-        !value TYPE c .
+        !value TYPE c DEFAULT abap_true .
     METHODS set_text_column
       IMPORTING
         !value TYPE lvc_fname

@@ -125,7 +125,7 @@ CLASS cl_salv_column DEFINITION
         VALUE(value) TYPE c .
     METHODS set_alignment
       IMPORTING
-        !value TYPE any .
+        !value TYPE i DEFAULT 1 .
     METHODS set_currency
       IMPORTING
         !value TYPE any .
@@ -153,19 +153,19 @@ CLASS cl_salv_column DEFINITION
         !value TYPE any .
     METHODS set_leading_zero
       IMPORTING
-        !value TYPE any .
+        !value TYPE c DEFAULT abap_true .
     METHODS set_long_text
       IMPORTING
         !value TYPE any .
     METHODS set_lowercase
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_medium_text
       IMPORTING
         !value TYPE any.
     METHODS set_optimized
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_output_length
       IMPORTING
         !value TYPE any.
@@ -193,19 +193,19 @@ CLASS cl_salv_column DEFINITION
         !value TYPE any.
     METHODS set_sign
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_technical
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_tooltip
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_visible
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_zero
       IMPORTING
-        !value TYPE any.
+        !value TYPE c DEFAULT abap_true.
     METHODS set_decfloat_style
       IMPORTING
         !value TYPE any.
@@ -233,7 +233,7 @@ CLASS cl_salv_column DEFINITION
     DATA ddic_outputlen TYPE c.
     DATA: BEGIN OF ddic_reference,
             field TYPE c,
-            column type c,
+            column TYPE c,
           END OF ddic_reference.
     DATA ddic_decimals TYPE c  .
     DATA decimals_column TYPE c .
